@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Mirakl Link Checker",
+  "version": "1.0",
+  "description": "Empêche l'envoi de messages contenant des liens livea.fr sur Mirakl.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.mirakl.net/*"],
+      "js": ["content.js"]
+    }
+ ]
+}
