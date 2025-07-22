@@ -1,5 +1,5 @@
 const MESSAGE_SELECTOR = 'textarea';
-const SEND_BUTTON_SELECTOR = 'button[type="submit"]';
+const SEND_BUTTON_SELECTOR = 'button[type="button"]'; // Make sure the button matches...
 
 function checkMessageAndToggleSend(messageElement, sendButton) {
   const text = messageElement.value;
